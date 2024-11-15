@@ -1,0 +1,178 @@
+body{
+    background: gray;
+}
+/*estilizando_banner*/
+.contenedor_general_desconocido_1 {
+    width: 1349px;
+    margin: -8px 0px 0px -8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(30, 115, 190);
+}
+.gov_co {
+    width: 150px;
+    padding: 15px;
+    height: auto;
+}
+/*estilizando_menu_de_navegacion*/
+.contenedor_general_desconocido_2{
+    width: 1349px;
+    height: 68px;
+    margin-left: -8px;
+    background: rgb(255, 255, 255);
+}
+.dadis{
+    width: 250px;
+    margin-left: -1px;   
+    height: auto;
+}
+.search-container{
+    margin-top: -55px;
+    margin-left: 260px;
+    display: flex;
+}
+form{
+    display: flex;
+    align-items: center;
+}
+input[type="text"]{
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    transition: border-color 0.3s ease-in-out;
+    border: 2px solid rgb(204, 204, 204);
+}
+input[type="text"]:focus {
+    border-color: rgb(0, 123, 255);
+}
+button{
+    padding: 10px 15px;
+    font-size: 16px;
+    margin-left: 10px;
+    transition: background-color 0.3s ease-in-out;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(0, 123, 255);
+    color: rgb(255, 255, 255);
+}
+button:hover{
+    background-color: rgb(0, 86, 179);
+}
+.menu_de_navegacion{
+    margin-top: -30px;
+    margin-left: 653px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.seleccionar_opcion{
+    margin-left: 30px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.seleccionar_opcion:hover{
+    color: rgb(30, 115, 190);
+}
+/*estilizando_carrusel*/
+.contenedor_general_desconocido_3{
+    width: 1339px;
+    padding: 5px;
+    height: 517px;
+    margin-left: -8px;
+    background: rgb(255, 255, 255);
+}
+.slider-container {
+    width: 1320px;
+    margin-top: 10px;
+    margin-left: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.slide {
+    min-width: 100%;
+    transition: opacity 0.5s ease;
+}
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.prev, .next {
+    top: 50%;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transform: translateY(-50%);
+    position: absolute;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+.prev {
+    left: -10px;
+}
+.next {
+    right: 0px;
+}
+.indicators {
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    position: absolute;
+}
+.indicator {
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.indicator.active {
+    background-color: rgb(30, 115, 190);
+}
+/*estilizando_recomendaciones_o_sujerencias*/
+.contenedor_general_desconocido_4{
+    width: 1339px;
+    padding: 5px;
+    height: 517px;
+    margin-left: -8px;
+    background: rgb(30, 115, 190);
+}
+.titulo_deconocido_1{
+    margin-top: 5px;
+    margin-left: 5px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contenedor_general_consultas_1{
+    margin-top: -10px;
+    margin-left: 5px;
+}
+.consulte_aqui{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.consulta{
+    margin-top: -15px;
+}
+.consultados{
+    margin-top: 30px;
+}
+.seleccionar_consulta{
+    padding: 10px;
+    border: 2px solid rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+}
+.seleccionar_consulta:hover{
+    background-color: rgb(215, 253, 0);
+}
