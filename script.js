@@ -26,3 +26,34 @@ indicators.forEach((indicator, index) => {
     indicator.addEventListener('click', () => goToSlide(index));
 });
 showSlide(currentIndex);
+//funcionalidad_participantes_carrusel
+document.addEventListener('DOMContentLoaded', function() {
+    const categories = document.querySelectorAll('.category');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const carousel = document.querySelector('.carousel');
+    const categoryWidth = categories[0].offsetWidth + 30;
+    let currentIndex = 0;
+    if (prevBtn && nextBtn) {
+        function updateCategory() {
+            categories.forEach((category, index) => {
+                category.classList.remove('active');
+                if (index === currentIndex) {
+                    category.classList.add('active');
+                }
+            });
+            carousel.style.transform = `translateX(-${currentIndex * categoryWidth}px)`;
+        }
+        prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex === 0) ? categories.length - 1 : currentIndex - 1;
+            updateCategory();
+        });
+        nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex === categories.length - 1) ? 0 : currentIndex + 1;
+            updateCategory();
+        });
+        updateCategory();
+    } else {
+        console.error('No se pudo encontrar el botón anterior o siguiente.');
+    }
+});
