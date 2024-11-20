@@ -57,3 +57,17 @@ document.addEventListener('DOMContentLoaded', function() {
         console.error('No se pudo encontrar el botón anterior o siguiente.');
     }
 });
+//funcionalidad_de_notificaciones
+const toggleButton = document.getElementById("toggleButton");
+const content = document.getElementById("content");
+toggleButton.addEventListener("click", () => {
+    if (content.classList.contains("hidden")) {
+        content.classList.remove("hidden");
+        content.classList.add("visible");
+        toggleButton.textContent = "Ocultar contenido";
+    } else {
+        content.classList.remove("visible");
+        content.classList.add("hidden");
+        toggleButton.textContent = "Mostrar contenido";
+    }
+});
